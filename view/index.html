@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+<body ng-app="myApp" ng-controller="todoCtrl">
+
+<h2>Calculatest</h2>
+
+<!-- two input fill-->
+    <input type="number" ng-model="input1" size="50000" placeholder="Put  a Number">
+    <input type="number" ng-model="input2" size="50000" placeholder="Put a Number">
+<!-- plus botton-->
+    <form ng-submit="plus()">
+      <input type="submit" value="+">
+    </form>
+<!-- minus botton-->
+    <form ng-submit="minus()">
+      <input type="submit" value="-">
+    </form>
+    <!-- multi botton-->
+    <form ng-submit="multi()">
+      <input type="submit" value="*">
+    </form>
+
+    <!--divide botton -->
+    <form ng-submit="divide()">
+      <input type="submit" value="/">
+    </form>
+
+
+<br>
+
+
+
+
+<!-- script for function-->
+<script src="./../process/index.js"></script>
+<script src="./../process/operate.js"></script>
+
+</body>
+</html>
